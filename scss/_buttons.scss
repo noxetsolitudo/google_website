@@ -1,0 +1,31 @@
+//Buttons
+.btn {
+  display: inline-block;
+  text-decoration: none;
+  padding: 0.5rem 0.8rem;
+  border: 1px $primary-color solid;
+  cursor: pointer;
+
+  &.btn-primary {
+    background-color: $terciary-color;
+    color: $grey04;
+    padding: 0.6rem 1.1rem;
+    font-size: 0.9rem;
+    border-radius: 0.3rem;
+    transform: box-shadow 0.3s;
+    &:hover {
+      border: 1px $grey01 solid;
+      box-shadow: 0 0.04rem 0px rgba(33, 33, 33, 0.2);
+    }
+  }
+
+  &.btn-secondary {
+    background-color: $secondary-color;
+    color: $primary-color;
+    font-weight: 600;
+    border-radius: 0.2rem;
+    &:hover {
+      text-decoration: none;
+    }
+  }
+}
